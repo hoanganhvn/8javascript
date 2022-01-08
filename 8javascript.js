@@ -26,10 +26,14 @@
 // // BTTVN 2
 let n = parseInt(prompt("Nhập vào số cần kiểm tra có phải là số nguyên tố hay không:"));
 
-if (n == 2 || n ==3 || n ==5 || n ==7) {
+if (n.toString() == "NaN") {
+    alert("Bạn chưa nhập vào số cần kiểm tra.");
+} else if (n == 2 || n ==3 || n ==5 || n ==7) {
     alert(n + " là số nguyên tố");
 } else if (n > 1 && n%2 != 0 && n%3 != 0 && n%5 != 0 && n%7 != 0){
         alert(n + " là số nguyên tố");
     } else {
         alert(n + " không phải là số nguyên tố");
     }
+
+
